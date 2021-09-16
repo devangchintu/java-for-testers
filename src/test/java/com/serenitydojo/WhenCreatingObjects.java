@@ -1,9 +1,9 @@
 package com.serenitydojo;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+
 
 public class WhenCreatingObjects {
 
@@ -65,15 +65,32 @@ public class WhenCreatingObjects {
 
     @Test
     public void pets_can_play() {
-
         Pet felix = new Cat("Felix",4);
         Pet fido = new Dog("Fido", "bone", 5);
         Pet rusty = new Hampster("Rusty", "wheels", 1);
 
-        assertEquals(felix.play(), "plays with string");
-        assertEquals(fido.play(), "plays with bone");
+       assertEquals(felix.play(), "plays with string");
+       assertEquals(fido.play(), "plays with bone");
         assertEquals(rusty.play(), "runs in wheel");
 
     }
+
+    @Test
+
+    public void lisofcolors()
+    {
+        String[] Color = new String[3];
+        Color[0]="Red";
+        Color[1]="Yellow";
+        Color[2]= "Blue";
+
+        System.out.println("1st Color is - " + Color[0]);
+        for(int i=0;i<3;i++){
+            System.out.println("Color is " + Color[i]);
+        }
+
+    }
+
+
 
 }
